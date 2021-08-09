@@ -1,0 +1,53 @@
+/* ----------------SERVICIOS---------------- */
+/* ------CARDS------ */
+.cardContenedor{
+    margin-top: 1rem;
+    &__header{
+        background-color: #2B2343;
+        border: #201a31 solid 0.02rem;
+    }
+    &__img{
+        height: 8rem;
+        width: auto;
+    }
+    &__body{
+        height: 9rem;
+        background-color: #2B2343;
+        font-family: $fuentePrincipal;
+        color: $blanco;
+        border: #201a31 solid 0.02rem;
+    }    
+    &__body--prodCompleta{
+        height: 7rem;
+        background-color: #2B2343;
+        font-family: $fuentePrincipal;
+        color: $blanco;
+        border: #201a31 solid 0.02rem;
+    }
+    &__footer{
+        background-color: #2B2343;
+        border: #201a31 solid 0.02rem;
+    }
+    &__boton{
+        background-color:$colorSecundario;
+        color:$colorPrincipal;
+        font-weight: bold;
+        border-color: $negro;
+    }
+    &__boton:hover{
+        background-color:$colorPrincipal;
+        color:$colorSecundario;
+        font-weight: bold;
+        border-color: $negro;
+    }
+}
+/* ------COMO ADQUIRIR SERVICIOS------ */
+.seccionComoAdquirirServicios{
+    background-color: #574686;
+    padding: 1.5rem 0 1.5rem 0;
+    margin-top: 2.2rem;
+    &__parrafo{
+        color: $negro;
+        font-size: 1.25rem;
+    }
+}

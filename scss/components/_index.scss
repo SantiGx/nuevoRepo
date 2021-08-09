@@ -1,0 +1,42 @@
+/* --------------- INICIO --------------- */
+.tituloSupernovaBeats{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2rem;
+}
+.tituloNovedades{
+    font-size: 3rem;
+}
+.articuloNovedades{
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    &__titulo{
+        color: $colorPrincipal;
+        font-family: 'Merriweather', serif;
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+        font-weight: bold;
+    }
+    &__texto{
+        color: $blanco;
+        font-size: 1.25rem;
+    }
+    &__link{
+        color: $colorPrincipal;
+    }
+}
+.tablaComparativaBeats{
+    margin: auto;
+    &__titulos{
+        color: $colorPrincipal;
+    }
+    &__texto{
+        color: $blanco;
+    font-size: 1.25rem;
+    }
+}

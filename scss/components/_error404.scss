@@ -1,0 +1,31 @@
+.error404{
+    margin: auto;
+    text-align: center;
+    &__titulo{
+        margin-top: 20%;
+        font-size: 6rem;
+    }
+    &__contenedorLogoParrafo{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    &__logo{
+        height: 11rem;
+        width: 11rem;
+    }
+    &__subtitulo{
+        font-size: 4rem;
+    }
+    &__parrafo{
+        color: $blanco;
+        font-size: 2rem;
+        text-align: center;
+    }
+    &__link{
+        color: $colorPrincipal;
+    }
+}

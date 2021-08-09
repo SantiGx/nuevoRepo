@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Contactame vía mail y redes sociales o suscribite a mi newsletter para estar al tanto de promociones, instrumentales nuevas y más novedades!.">
+    <meta name="keywords"  content="Producción musical, productor musical, estudio de grabación en buenos aires, géneros urbanos, rap, trap, reggaetón, newsletter, contacto, Supernova Beats">
+    <!------- FUENTES -------->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Icono -->
+    <link rel="icon" href="../img/iconoSupernova.ico">
+    <title>Contacto | Supernova Beats</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+    <!----------------------------------- FIN HEAD ----------------------------------->
+    <!----------------------------------- INICIO BODY ----------------------------------->
+<body>
+    <!----------------------------------- INICIO HEADER ----------------------------------->
+    <header class="header">      
+        <a href="../index.html"><img src="../img/logoSupernovaBeats.png" alt="logo-supernovabeats" class="header__logo"></a>
+        <!-- INICIO NAVEGADOR -->
+        <nav class="navegador">
+            <ul class="navegador__lista">
+                <li class="navegador__item">
+                    <a href="../index.html" class="navegador__link">Inicio</a>
+                </li>
+                <li class="navegador__item">
+                    <a href="instrumentales.html" class="navegador__link">Instrumentales</a>
+                </li>
+                <li class="navegador__item">
+                    <a href="servicios.html" class="navegador__link">Servicios</a>
+                </li>
+                <li class="navegador__item">
+                    <a href="sobre_mi.html" class="navegador__link">Sobre mí</a>
+                </li>
+                <li class="navegador__item">
+                    <a href="contacto.html" class="navegador__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN NAVEGADOR -->
+    </header>
+    <!----------------------------------- FIN HEADER ----------------------------------->
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------- INICIO MAIN ----------------------------------->
+    <main>
+        <h1>CONTACTO</h1>
+        <section>
+            <!-------  INICIO FORMULARIO DE CONTACTO  ------->
+            <form action="">
+                <div class="container formularioContacto">
+                    <div class="row justify-content-center formularioContacto__nombreAsunto">
+                        <div class="col formularioContacto__contenedorInput">
+                            <!-- <label for="nombre"></label> -->
+                            <input class="formularioContacto__input" type="text" name="nombre"  placeholder="Nombre" required>
+                        </div>
+                        <div class="col formularioContacto__contenedorInput">
+                            <!-- <label for="asunto"></label> -->
+                            <input class="formularioContacto__input" type="text" name="asunto"  placeholder="Asunto" required>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center formularioContacto__mail">
+                        <div class="col formularioContacto__contenedorInput">
+                            <!-- <label for="mail"></label> -->
+                            <input class="formularioContacto__input" type="email" name="mail"  placeholder="Correo Electrónico" required>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center formularioContacto__mensaje">
+                        <div class="col formularioContacto__contenedorInput--mensaje">
+                            <!-- <label for="mensaje"></label> -->
+                            <textarea class="formularioContacto__input--mensaje" name="mensaje" rows="4" cols="15" placeholder=" Escriba su mensaje aqui" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center formularioContacto__contenedorBotones">
+                        <div class="col">
+                            <button class="col formularioContacto__boton" type="submit">Enviar</button>
+                        </div>
+                        <div class="col">
+                            <button class="col formularioContacto__boton" type="reset">Borrar</button>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </form> 
+            <!------- FIN FORMULARIO DE CONTACTO  ------->
+        </section>
+        <!------- INICIO NEWSLETTER ------->
+        <section class="seccionNewsletter">
+            <div class="container seccionNewsletter__contenedor">
+                <div class="row">
+                    <h2>NEWSLETTER</h2>
+                </div>
+                <div class="row justify-content-center row-cols-auto">
+                    <h3>¿Te quieres suscribir al Newsletter?</h3>
+                </div>
+                <div class="row justify-content-center row-cols-auto">
+                    <form>
+                        <label for="suscripcion_newsletter"></label>
+                        <select name="suscripcion_newsletter">
+                            <option value="si" selected>Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="row justify-content-center row-cols-auto">
+                    <h3>¿Que novedades quieres recibir?</h3>
+                </div>
+                <div class="row justify-content-center row-cols-auto">
+                    <form class="seccionNewsletter__formCheck ">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label seccionNewsletter__texto" for="flexSwitchCheckDefault">Instrumentales nuevas</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label seccionNewsletter__texto" for="flexSwitchCheckDefault">Promociones</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label seccionNewsletter__texto" for="flexSwitchCheckDefault">Producciones nuevas</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label seccionNewsletter__texto" for="flexSwitchCheckDefault">Novedades</label>
+                        </div>
+                        <div>
+                            <label for="newsletter_mail"></label>
+                            <input type="email" name="newsletter_mail"  placeholder="Correo Electrónico" required class="seccionNewsletter__mail">        
+                            <button type="submit suscribirse" class="seccionNewsletter__boton">
+                                ¡Suscribirse!
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!------- FIN NEWSLETTER ------->
+        <!------------------------------->
+        <!------- INICIO REDES ------->
+        <section>
+            <h2>¡CONTACTAME EN MIS REDES SOCIALES!</h2>
+            <div class="contenedorRedesContacto">
+                <a href="https://www.youtube.com/channel/UCWHUnTbFU1OoOVD6072wvPQ">
+                    <img class="contenedorRedesContacto__logo"  src="../img/logoYoutube.png" alt="Logo Youtube">
+                </a>
+                <a href="https://www.instagram.com/supernovabeats.wav/">
+                    <img class="contenedorRedesContacto__logo" src="../img/logoInstagram.png" alt="Logo Instagram">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img class="contenedorRedesContacto__logo" src="../img/logoFacebook.png" alt="Logo Facebook">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img class="contenedorRedesContacto__logo" src="../img/logoTwitter.png" alt="Logo Twitter">
+                </a>
+            </div>
+        </section>
+        <!------- FIN REDES ------->
+    </main>
+    <!----------------------------------- INICIO FOOTER ----------------------------------->
+    <footer class="footer">
+        <p class="textoFooter footer__texto">Supernova Beats®</p>
+    </footer>
+    <!----------------------------------- FIN FOOTER ----------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

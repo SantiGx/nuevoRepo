@@ -1,0 +1,33 @@
+/* ----------------SOBRE MI---------------- */
+.contenedorSobreMi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__logo{
+        height: 12rem;
+        width: 12rem;
+        order: 1;
+    }
+    &__parrafo{
+        color: $blanco;
+        width: 60%;
+        font-size: 1.2rem;
+    }
+}
+.contenedorAlgunosTrabajos{
+     &__contenedorVideos{
+        height: 100%;
+     }
+     &__contenedorVideo{
+        height: 100%; 
+        margin: auto;
+        width: auto;
+     }
+     &__video{
+        width: 40rem;
+        height: 20rem;
+        margin: auto;
+    }
+}
