@@ -86,6 +86,65 @@ h3 {
   height: 2.5rem;
   margin: 0.2rem; }
 
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width: 600px) {
+  /* --------------- HEADER ---------------- */
+  .header {
+    position: sticky;
+    background-color: #3a2f5a;
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .header__logo {
+      height: 5rem; }
+  .navegador__lista {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .navegador__item {
+    margin: 0.5rem;
+    min-width: max-content; }
+  .navegador__link {
+    color: #d04767;
+    text-decoration: none;
+    font-size: 1rem; }
+  .navegador__link:hover {
+    border-bottom: 1px solid #d04767;
+    color: #d04767; } }
+
+/* MIN 600px */
+@media only screen and (min-width: 600px) {
+  /* --------------- HEADER ---------------- */
+  .header {
+    position: sticky;
+    background-color: #3a2f5a;
+    height: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .header__logo {
+      height: 6rem; }
+  .navegador__lista {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .navegador__item {
+    margin: 0.5rem;
+    min-width: max-content; }
+  .navegador__link {
+    color: #d04767;
+    text-decoration: none;
+    font-size: 1.2rem; }
+  .navegador__link:hover {
+    border-bottom: 1px solid #d04767;
+    color: #d04767; } }
+
+/* MIN 992px */
 /* --------------- INICIO --------------- */
 .tituloSupernovaBeats {
   font-size: 4rem;
@@ -129,7 +188,7 @@ h3 {
     font-family: 'Lato', sans-serif;
     margin-bottom: 2rem; }
   .tituloNovedades {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
   .articuloNovedades {
     text-align: center;
     padding: 1.5rem;
@@ -140,30 +199,31 @@ h3 {
     .articuloNovedades__titulo {
       color: #d04767;
       font-family: 'Merriweather', serif;
-      font-size: 1.5rem;
-      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
       font-weight: bold; }
     .articuloNovedades__texto {
       color: #ffffff;
-      font-size: 1.25rem; }
+      font-size: 1rem; }
     .articuloNovedades__link {
       color: #d04767; }
   .tablaComparativaBeats {
     margin: auto; }
     .tablaComparativaBeats__titulos {
+      font-size: 1rem;
       color: #d04767; }
     .tablaComparativaBeats__texto {
       color: #ffffff;
-      font-size: 1.25rem; } }
+      font-size: 1rem; } }
 
 /* MIN 600px */
 @media only screen and (min-width: 600px) {
   .tituloSupernovaBeats {
-    font-size: 4rem;
+    font-size: 3.25rem;
     font-family: 'Lato', sans-serif;
     margin-bottom: 2rem; }
   .tituloNovedades {
-    font-size: 3rem; }
+    font-size: 2.75rem; }
   .articuloNovedades {
     text-align: center;
     padding: 1.5rem;
@@ -295,6 +355,76 @@ h3 {
   height: 2rem;
   width: 95%; }
 
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width: 600px) {
+  .contenedorGridInstrumental {
+    display: grid;
+    grid-template-columns: 10% repeat(5, 10%) 20% repeat(2, 10%);
+    grid-template-rows: auto auto;
+    grid-template-areas: "img titulo duracion bpm genero escala tags precio carrito" "img reproductor reproductor reproductor reproductor reproductor reproductor reproductor reproductor ";
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: #2B2343;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    /* TITULOS INSTRUMENTALES*/
+    /* INFO INSTRUMENTALES*/ }
+    .contenedorGridInstrumental__tituloTitulo {
+      grid-area: titulo; }
+    .contenedorGridInstrumental__tituloDuracion {
+      grid-area: duracion; }
+    .contenedorGridInstrumental__tituloBpm {
+      grid-area: bpm; }
+    .contenedorGridInstrumental__tituloGenero {
+      grid-area: genero; }
+    .contenedorGridInstrumental__tituloEscala {
+      grid-area: escala; }
+    .contenedorGridInstrumental__tituloTags {
+      grid-area: tags; }
+    .contenedorGridInstrumental__tituloPrecio {
+      grid-area: precio; }
+    .contenedorGridInstrumental__tituloComprar {
+      grid-area: carrito; }
+    .contenedorGridInstrumental__infoTitulo {
+      grid-area: titulo; }
+    .contenedorGridInstrumental__infoDuracion {
+      grid-area: duracion; }
+    .contenedorGridInstrumental__infoBpm {
+      grid-area: bpm; }
+    .contenedorGridInstrumental__infoGenero {
+      grid-area: genero; }
+    .contenedorGridInstrumental__infoEscala {
+      grid-area: escala; }
+    .contenedorGridInstrumental__infoTags {
+      grid-area: tags; }
+    .contenedorGridInstrumental__infoPrecio {
+      grid-area: precio; }
+    .contenedorGridInstrumental__infoCarrito {
+      grid-area: carrito; }
+    .contenedorGridInstrumental__reproductorInstrumental {
+      grid-area: reproductor; }
+    .contenedorGridInstrumental__coverInstrumental {
+      grid-area: img; }
+  .infoInstrumental {
+    color: #d04767;
+    font-size: 1rem; }
+  .titulosInstrumentales {
+    color: #ffffff;
+    font-size: 0.8rem;
+    background-color: #3a2f5a; }
+  .coverInstrumental {
+    width: 100%;
+    grid-area: img; }
+  .reproductorInstrumental {
+    height: 2rem;
+    width: 95%; } }
+
+/* MIN 600px */
+/* MIN 992px */
 /* ----------------SERVICIOS---------------- */
 /* ------CARDS------ */
 .cardContenedor {
@@ -340,6 +470,9 @@ h3 {
     color: #09070D;
     font-size: 1.25rem; }
 
+/* --------------- MEDIA QUERY --------------- */
+/* MIN 600px */
+/* MIN 992px */
 /* ----------------SOBRE MI---------------- */
 .contenedorSobreMi {
   display: flex;
@@ -350,7 +483,8 @@ h3 {
   .contenedorSobreMi__logo {
     height: 12rem;
     width: 12rem;
-    order: 1; }
+    order: 1;
+    margin-left: 1rem; }
   .contenedorSobreMi__parrafo {
     color: #ffffff;
     width: 60%;
@@ -369,6 +503,36 @@ h3 {
   height: 20rem;
   margin: auto; }
 
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width: 600px) {
+  .contenedorSobreMi {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorSobreMi__logo {
+      height: 12rem;
+      max-width: 12rem;
+      margin-bottom: 1rem; }
+    .contenedorSobreMi__parrafo {
+      color: #ffffff;
+      font-size: 1rem;
+      width: auto;
+      max-width: 90%; }
+  .contenedorAlgunosTrabajos__contenedorVideos {
+    height: 100%; }
+  .contenedorAlgunosTrabajos__contenedorVideo {
+    height: 100%;
+    margin: auto;
+    width: auto; }
+  .contenedorAlgunosTrabajos__video {
+    width: 32rem;
+    height: 16rem;
+    margin: auto; } }
+
+/* MIN 600px */
+/* MIN 992px */
 /* --------------- CONTACTO ---------------- */
 .formularioContacto {
   width: 50%;
@@ -439,6 +603,138 @@ h3 {
   justify-content: space-between; }
   .contenedorRedesContacto__logo {
     width: 5rem; }
+
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width: 600px) {
+  .formularioContacto {
+    width: 90%;
+    margin: auto; }
+    .formularioContacto__contenedorInput, .formularioContacto__contenedorBotones, .formularioContacto__boton {
+      margin: auto;
+      height: 2.5rem; }
+    .formularioContacto__contenedorInput--mensaje {
+      height: 5rem; }
+    .formularioContacto__contenedorBotones {
+      width: 50%; }
+    .formularioContacto__input, .formularioContacto__input--mensaje, .seccionNewsletter__mail {
+      width: 100%;
+      background-color: #2B2343;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      color: #d04767; }
+    .formularioContacto__input--mensaje {
+      height: 100%;
+      resize: none; }
+    .formularioContacto__boton {
+      height: 80%;
+      background-color: #3a2f5a;
+      border: solid 1px #d04767;
+      width: 100%;
+      margin-top: 0.6rem;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      color: #d04767; }
+    .formularioContacto__boton:focus {
+      background-color: #d04767;
+      border: solid 1px #3a2f5a;
+      color: #3a2f5a; }
+  .seccionNewsletter {
+    background-color: #574686;
+    padding: 1.5rem 0 1.5rem 0;
+    margin-top: 2rem; }
+    .seccionNewsletter__contenedor {
+      max-width: 90%; }
+    .seccionNewsletter__formCheck {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .seccionNewsletter__texto {
+      font-family: "Lato", sans-serif;
+      font-size: 1.25rem;
+      color: #ffffff; }
+    .seccionNewsletter__mail {
+      width: auto;
+      background-color: #2B2343; }
+    .seccionNewsletter__boton {
+      background-color: #3a2f5a;
+      border: solid 1px #d04767;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      color: #d04767; }
+    .seccionNewsletter__boton:focus {
+      background-color: #d04767;
+      border: solid 1px #3a2f5a;
+      color: #3a2f5a; } }
+
+/* MIN 600px */
+@media only screen and (min-width: 600px) {
+  .formularioContacto {
+    width: 75%;
+    margin: auto; }
+    .formularioContacto__contenedorInput, .formularioContacto__contenedorBotones, .formularioContacto__boton {
+      margin: auto;
+      height: 2.5rem; }
+    .formularioContacto__contenedorInput--mensaje {
+      height: 5rem; }
+    .formularioContacto__contenedorBotones {
+      width: 50%; }
+    .formularioContacto__input, .formularioContacto__input--mensaje, .seccionNewsletter__mail {
+      width: 100%;
+      background-color: #2B2343;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      color: #d04767; }
+    .formularioContacto__input--mensaje {
+      height: 100%;
+      resize: none; }
+    .formularioContacto__boton {
+      height: 80%;
+      background-color: #3a2f5a;
+      border: solid 1px #d04767;
+      width: 100%;
+      margin-top: 0.6rem;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      color: #d04767; }
+    .formularioContacto__boton:focus {
+      background-color: #d04767;
+      border: solid 1px #3a2f5a;
+      color: #3a2f5a; }
+  .seccionNewsletter {
+    background-color: #574686;
+    padding: 1.5rem 0 1.5rem 0;
+    margin-top: 2rem; }
+    .seccionNewsletter__contenedor {
+      max-width: 75%; }
+    .seccionNewsletter__formCheck {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .seccionNewsletter__texto {
+      font-family: "Lato", sans-serif;
+      font-size: 1.25rem;
+      color: #ffffff; }
+    .seccionNewsletter__mail {
+      width: auto;
+      background-color: #2B2343; }
+    .seccionNewsletter__boton {
+      background-color: #3a2f5a;
+      border: solid 1px #d04767;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      color: #d04767; }
+    .seccionNewsletter__boton:focus {
+      background-color: #d04767;
+      border: solid 1px #3a2f5a;
+      color: #3a2f5a; } }
+
+/* MIN 992px */
+@media only screen and (min-width: 992px) {
+  .formularioContacto {
+    width: 50%;
+    margin: auto; } }
 
 .error404 {
   margin: auto;

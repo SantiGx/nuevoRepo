@@ -90,3 +90,81 @@ h3{
         margin: 0.2rem;
     }    
 }
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width:600px){
+    /* --------------- HEADER ---------------- */
+    .header{
+        position: sticky;
+        background-color: $colorSecundario;
+        height: 6rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &__logo{
+            height: 5rem;
+        }
+    }
+    .navegador{
+        &__lista{
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        &__item{
+            margin: 0.5rem;
+            min-width:max-content;
+        }
+        &__link{
+            color: $colorPrincipal;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        &__link:hover{
+            border-bottom: 1px solid $colorPrincipal;
+            color: $colorPrincipal;
+        }
+    }
+}
+/* MIN 600px */
+@media only screen and (min-width:600px){
+    /* --------------- HEADER ---------------- */
+    .header{
+        position: sticky;
+        background-color: $colorSecundario;
+        height: 7rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &__logo{
+            height: 6rem;
+        }
+    }
+    .navegador{
+        &__lista{
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        &__item{
+            margin: 0.5rem;
+            min-width:max-content;
+        }
+        &__link{
+            color: $colorPrincipal;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        &__link:hover{
+            border-bottom: 1px solid $colorPrincipal;
+            color: $colorPrincipal;
+        }
+    }
+}
+/* MIN 992px */
+@media only screen and (min-width:992px){
+
+}

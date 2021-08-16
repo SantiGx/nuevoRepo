@@ -9,6 +9,7 @@
         height: 12rem;
         width: 12rem;
         order: 1;
+        margin-left: 1rem;
     }
     &__parrafo{
         color: $blanco;
@@ -30,4 +31,46 @@
         height: 20rem;
         margin: auto;
     }
+}
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width:600px){
+    .contenedorSobreMi{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__logo{
+            height: 12rem;
+            max-width: 12rem;
+            margin-bottom: 1rem;
+        }
+        &__parrafo{
+            color: $blanco;
+            font-size: 1rem;
+            width: auto;
+            max-width: 90%;
+        }
+    }
+    .contenedorAlgunosTrabajos{
+        &__contenedorVideos{
+           height: 100%;
+        }
+        &__contenedorVideo{
+           height: 100%; 
+           margin: auto;
+           width: auto;
+        }
+        &__video{
+           width: 32rem;
+           height: 16rem;
+           margin: auto;
+       }
+   }
+}
+/* MIN 600px */
+@media only screen and (min-width:600px){
+}
+/* MIN 992px */
+@media only screen and (min-width:992px){
 }
