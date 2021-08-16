@@ -285,76 +285,6 @@ h3 {
       font-size: 1.25rem; } }
 
 /* ----------------INSTRUMENTALES------------ */
-.contenedorGridInstrumental {
-  display: grid;
-  grid-template-columns: 10% repeat(5, 10%) 20% repeat(2, 10%);
-  grid-template-rows: auto auto;
-  grid-template-areas: "img titulo duracion bpm genero escala tags precio carrito" "img reproductor reproductor reproductor reproductor reproductor reproductor reproductor reproductor ";
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: #2B2343;
-  margin-bottom: 0.5rem;
-  padding: 0.4rem;
-  /* TITULOS INSTRUMENTALES*/
-  /* INFO INSTRUMENTALES*/ }
-  .contenedorGridInstrumental__tituloTitulo {
-    grid-area: titulo; }
-  .contenedorGridInstrumental__tituloDuracion {
-    grid-area: duracion; }
-  .contenedorGridInstrumental__tituloBpm {
-    grid-area: bpm; }
-  .contenedorGridInstrumental__tituloGenero {
-    grid-area: genero; }
-  .contenedorGridInstrumental__tituloEscala {
-    grid-area: escala; }
-  .contenedorGridInstrumental__tituloTags {
-    grid-area: tags; }
-  .contenedorGridInstrumental__tituloPrecio {
-    grid-area: precio; }
-  .contenedorGridInstrumental__tituloComprar {
-    grid-area: carrito; }
-  .contenedorGridInstrumental__infoTitulo {
-    grid-area: titulo; }
-  .contenedorGridInstrumental__infoDuracion {
-    grid-area: duracion; }
-  .contenedorGridInstrumental__infoBpm {
-    grid-area: bpm; }
-  .contenedorGridInstrumental__infoGenero {
-    grid-area: genero; }
-  .contenedorGridInstrumental__infoEscala {
-    grid-area: escala; }
-  .contenedorGridInstrumental__infoTags {
-    grid-area: tags; }
-  .contenedorGridInstrumental__infoPrecio {
-    grid-area: precio; }
-  .contenedorGridInstrumental__infoCarrito {
-    grid-area: carrito; }
-  .contenedorGridInstrumental__reproductorInstrumental {
-    grid-area: reproductor; }
-  .contenedorGridInstrumental__coverInstrumental {
-    grid-area: img; }
-
-.infoInstrumental {
-  color: #d04767;
-  font-size: 1.25rem; }
-
-.titulosInstrumentales {
-  color: #ffffff;
-  font-size: 1.25rem;
-  background-color: #3a2f5a; }
-
-.coverInstrumental {
-  width: 100%;
-  grid-area: img; }
-
-.reproductorInstrumental {
-  height: 2rem;
-  width: 95%; }
-
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 600px) {
   .contenedorGridInstrumental {
@@ -365,7 +295,7 @@ h3 {
     justify-items: center;
     align-items: center;
     align-content: center;
-    width: 100%;
+    width: 95%;
     background-color: #2B2343;
     margin-bottom: 0.5rem;
     padding: 0.4rem;
@@ -424,7 +354,140 @@ h3 {
     width: 95%; } }
 
 /* MIN 600px */
+@media only screen and (min-width: 600px) {
+  .contenedorGridInstrumental {
+    display: grid;
+    grid-template-columns: 10% repeat(5, 10%) 20% repeat(2, 10%);
+    grid-template-rows: auto auto;
+    grid-template-areas: "img titulo duracion bpm genero escala tags precio carrito" "img reproductor reproductor reproductor reproductor reproductor reproductor reproductor reproductor ";
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    background-color: #2B2343;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    /* TITULOS INSTRUMENTALES*/
+    /* INFO INSTRUMENTALES*/ }
+    .contenedorGridInstrumental__tituloTitulo {
+      grid-area: titulo; }
+    .contenedorGridInstrumental__tituloDuracion {
+      grid-area: duracion; }
+    .contenedorGridInstrumental__tituloBpm {
+      grid-area: bpm; }
+    .contenedorGridInstrumental__tituloGenero {
+      grid-area: genero; }
+    .contenedorGridInstrumental__tituloEscala {
+      grid-area: escala; }
+    .contenedorGridInstrumental__tituloTags {
+      grid-area: tags; }
+    .contenedorGridInstrumental__tituloPrecio {
+      grid-area: precio; }
+    .contenedorGridInstrumental__tituloComprar {
+      grid-area: carrito; }
+    .contenedorGridInstrumental__infoTitulo {
+      grid-area: titulo; }
+    .contenedorGridInstrumental__infoDuracion {
+      grid-area: duracion; }
+    .contenedorGridInstrumental__infoBpm {
+      grid-area: bpm; }
+    .contenedorGridInstrumental__infoGenero {
+      grid-area: genero; }
+    .contenedorGridInstrumental__infoEscala {
+      grid-area: escala; }
+    .contenedorGridInstrumental__infoTags {
+      grid-area: tags; }
+    .contenedorGridInstrumental__infoPrecio {
+      grid-area: precio; }
+    .contenedorGridInstrumental__infoCarrito {
+      grid-area: carrito; }
+    .contenedorGridInstrumental__reproductorInstrumental {
+      grid-area: reproductor; }
+    .contenedorGridInstrumental__coverInstrumental {
+      grid-area: img; }
+  .infoInstrumental {
+    color: #d04767;
+    font-size: 1rem; }
+  .titulosInstrumentales {
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #3a2f5a; }
+  .coverInstrumental {
+    width: 100%;
+    grid-area: img; }
+  .reproductorInstrumental {
+    height: 2rem;
+    width: 95%; } }
+
 /* MIN 992px */
+@media only screen and (min-width: 992px) {
+  .contenedorGridInstrumental {
+    display: grid;
+    grid-template-columns: 10% repeat(5, 10%) 20% repeat(2, 10%);
+    grid-template-rows: auto auto;
+    grid-template-areas: "img titulo duracion bpm genero escala tags precio carrito" "img reproductor reproductor reproductor reproductor reproductor reproductor reproductor reproductor ";
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 75%;
+    margin: auto;
+    background-color: #2B2343;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+    /* TITULOS INSTRUMENTALES*/
+    /* INFO INSTRUMENTALES*/ }
+    .contenedorGridInstrumental__tituloTitulo {
+      grid-area: titulo; }
+    .contenedorGridInstrumental__tituloDuracion {
+      grid-area: duracion; }
+    .contenedorGridInstrumental__tituloBpm {
+      grid-area: bpm; }
+    .contenedorGridInstrumental__tituloGenero {
+      grid-area: genero; }
+    .contenedorGridInstrumental__tituloEscala {
+      grid-area: escala; }
+    .contenedorGridInstrumental__tituloTags {
+      grid-area: tags; }
+    .contenedorGridInstrumental__tituloPrecio {
+      grid-area: precio; }
+    .contenedorGridInstrumental__tituloComprar {
+      grid-area: carrito; }
+    .contenedorGridInstrumental__infoTitulo {
+      grid-area: titulo; }
+    .contenedorGridInstrumental__infoDuracion {
+      grid-area: duracion; }
+    .contenedorGridInstrumental__infoBpm {
+      grid-area: bpm; }
+    .contenedorGridInstrumental__infoGenero {
+      grid-area: genero; }
+    .contenedorGridInstrumental__infoEscala {
+      grid-area: escala; }
+    .contenedorGridInstrumental__infoTags {
+      grid-area: tags; }
+    .contenedorGridInstrumental__infoPrecio {
+      grid-area: precio; }
+    .contenedorGridInstrumental__infoCarrito {
+      grid-area: carrito; }
+    .contenedorGridInstrumental__reproductorInstrumental {
+      grid-area: reproductor; }
+    .contenedorGridInstrumental__coverInstrumental {
+      grid-area: img; }
+  .infoInstrumental {
+    color: #d04767;
+    font-size: 1.25rem; }
+  .titulosInstrumentales {
+    color: #ffffff;
+    font-size: 1.25rem;
+    background-color: #3a2f5a; }
+  .coverInstrumental {
+    width: 100%;
+    grid-area: img; }
+  .reproductorInstrumental {
+    height: 2rem;
+    width: 95%; } }
+
 /* ----------------SERVICIOS---------------- */
 /* ------CARDS------ */
 .cardContenedor {
