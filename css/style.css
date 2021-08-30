@@ -73,18 +73,19 @@ h3 {
   background-color: #2B2343;
   width: 100%;
   height: 5rem;
-  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center; }
   .footer__texto {
     color: #d04767;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto; }
 
 .redesFooter__icono {
   width: 2.5rem;
   height: 2.5rem;
-  margin: 0.2rem; }
+  margin-right: 0.3rem; }
 
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 600px) {
@@ -799,19 +800,22 @@ h3 {
     width: 50%;
     margin: auto; } }
 
+.body404 {
+  background-color: #3a2f5a; }
+
 .error404 {
-  margin: auto;
-  text-align: center; }
+  text-align: center;
+  margin: auto; }
   .error404__titulo {
     margin-top: 20%;
     font-size: 6rem; }
   .error404__contenedorLogoParrafo {
     display: flex;
     flex-direction: row;
-    width: 80%;
     margin: auto;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .error404__logo {
     height: 11rem;
     width: 11rem; }
@@ -823,3 +827,16 @@ h3 {
     text-align: center; }
   .error404__link {
     color: #d04767; }
+
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width: 600px) {
+  .error404__contenedorLogoParrafo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center; } }
+
+/* MIN 600px */
+/* MIN 992px */

@@ -74,20 +74,21 @@ h3{
     background-color: #2B2343;
     width: 100%;
     height: 5rem;
-    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     &__texto{
         color: $colorPrincipal;
         font-size: 1.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 .redesFooter{
     &__icono{
         width: 2.5rem;
         height: 2.5rem;
-        margin: 0.2rem;
+        margin-right: 0.3rem;
     }    
 }
 /* --------------- MEDIA QUERY --------------- */

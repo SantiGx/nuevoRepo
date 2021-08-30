@@ -1,6 +1,9 @@
+.body404{
+    background-color: $colorSecundario;
+}
 .error404{
-    margin: auto;
     text-align: center;
+    margin: auto;
     &__titulo{
         margin-top: 20%;
         font-size: 6rem;
@@ -8,10 +11,10 @@
     &__contenedorLogoParrafo{
         display: flex;
         flex-direction: row;
-        width: 80%;
         margin: auto;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
     &__logo{
         height: 11rem;
@@ -28,4 +31,23 @@
     &__link{
         color: $colorPrincipal;
     }
+}
+/* --------------- MEDIA QUERY --------------- */
+@media only screen and (max-width:600px){
+    .error404{
+        &__contenedorLogoParrafo{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+/* MIN 600px */
+@media only screen and (min-width:600px){
+}
+/* MIN 992px */
+@media only screen and (min-width:992px){
 }
