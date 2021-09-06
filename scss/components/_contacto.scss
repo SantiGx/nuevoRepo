@@ -4,93 +4,9 @@
     font-size: $tamanioFuente;
     color: $colorFuente;
  }
-// FORM CONTACTO //
-.formularioContacto{
-    width: 50%;
-    margin: auto;
-    // CONTENEDORES //
-    &__contenedorInput{
-        margin: auto;
-        height: 2.5rem;
-    }
-    &__contenedorInput--mensaje{
-        height: 5rem;
-    }
-    &__contenedorBotones{
-        @extend .formularioContacto__contenedorInput;
-        width: 50%;
-    }
-    // INPUTS //
-    &__input{
-        width: 100%;
-        background-color: #2B2343;
-        @include texto($fuentePrincipal, 1rem, $colorPrincipal);
-    }
-    &__input--mensaje{
-        @extend .formularioContacto__input;
-        height: 100%;
-        resize: none;
-    }
-    &__boton{
-        @extend .formularioContacto__contenedorInput;
-        height: 80%;
-        background-color: $colorSecundario;
-        border: solid 1px $colorPrincipal;
-        width: 100%;
-        margin-top: 0.6rem;
-        @include texto($fuentePrincipal, 1rem, $colorPrincipal);
-    }
-    &__boton:focus{
-        background-color: $colorPrincipal;
-        border: solid 1px $colorSecundario;
-        color: $colorSecundario;
-    }
-}
-// NEWSLETTER //
-.seccionNewsletter{
-    background-color: #574686;
-    padding: 1.5rem 0 1.5rem 0;
-    margin-top: 2rem;
-    &__contenedor{
-        max-width: 50%;
-    }
-    &__formCheck{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; 
-    }
-    &__texto{
-        @include texto($fuentePrincipal, 1.25rem, $blanco);
-    }
-    &__mail{
-        @extend .formularioContacto__input;
-        width: auto;
-        background-color: #2B2343;
-    }
-    &__boton{
-        background-color: $colorSecundario;
-        border: solid 1px $colorPrincipal;
-        @include texto($fuentePrincipal, 1rem, $colorPrincipal)
-    }
-    &__boton:focus{
-        background-color: $colorPrincipal;
-        border: solid 1px $colorSecundario;
-        color: $colorSecundario;
-    }
-}
-// REDES //
-.contenedorRedesContacto{
-    display: flex;
-    width: 24.6rem;
-    margin: auto;
-    justify-content: space-between;
-    &__logo{
-        width: 5rem;
-    }
-}
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width:600px){
+    
     .formularioContacto{
         width: 90%;
         margin: auto;
@@ -103,7 +19,8 @@
             height: 5rem;
         }
         &__contenedorBotones{
-            // @extend .formularioContacto__contenedorInput;
+            margin: auto;
+            height: 2.5rem;
             width: 50%;
         }
         // INPUTS //
@@ -113,12 +30,14 @@
             @include texto($fuentePrincipal, 1rem, $colorPrincipal);
         }
         &__input--mensaje{
-            // @extend .formularioContacto__input;
+            width: 100%;
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
             height: 100%;
             resize: none;
         }
         &__boton{
-            // @extend .formularioContacto__contenedorInput;
+            margin: auto;
             height: 80%;
             background-color: $colorSecundario;
             border: solid 1px $colorPrincipal;
@@ -135,10 +54,9 @@
     // NEWSLETTER //
     .seccionNewsletter{
         background-color: #574686;
-        padding: 1.5rem 0 1.5rem 0;
         margin-top: 2rem;
         &__contenedor{
-            max-width: 90%;
+            max-width: 100%;
         }
         &__formCheck{
             width: auto;
@@ -150,7 +68,8 @@
             @include texto($fuentePrincipal, 1.25rem, $blanco);
         }
         &__mail{
-            // @extend .formularioContacto__input;
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
             width: auto;
             background-color: #2B2343;
         }
@@ -163,6 +82,17 @@
             background-color: $colorPrincipal;
             border: solid 1px $colorSecundario;
             color: $colorSecundario;
+        }
+    }
+    // REDES //
+    .contenedorRedesContacto{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        &__logo{
+            width: 5rem;
         }
     }
 }
@@ -180,7 +110,8 @@
             height: 5rem;
         }
         &__contenedorBotones{
-            // @extend .formularioContacto__contenedorInput;
+            margin: auto;
+            height: 2.5rem;
             width: 50%;
         }
         // INPUTS //
@@ -190,12 +121,14 @@
             @include texto($fuentePrincipal, 1rem, $colorPrincipal);
         }
         &__input--mensaje{
-            // @extend .formularioContacto__input;
+            width: 100%;
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
             height: 100%;
             resize: none;
         }
         &__boton{
-            // @extend .formularioContacto__contenedorInput;
+            margin: auto;
             height: 80%;
             background-color: $colorSecundario;
             border: solid 1px $colorPrincipal;
@@ -227,7 +160,8 @@
             @include texto($fuentePrincipal, 1.25rem, $blanco);
         }
         &__mail{
-            // @extend .formularioContacto__input;
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
             width: auto;
             background-color: #2B2343;
         }
@@ -242,10 +176,107 @@
             color: $colorSecundario;
         }
     }
+    // REDES //
+    .contenedorRedesContacto{
+        display: flex;
+        width: 24.6rem;
+        margin: auto;
+        justify-content: space-between;
+        &__logo{
+            width: 5rem;
+        }
+    }
 }
 /* MIN 992px */
 @media only screen and (min-width:992px){
-    .formularioContacto {
+    // FORM CONTACTO //
+    .formularioContacto{
         width: 50%;
-        margin: auto; }
+        margin: auto;
+        // CONTENEDORES //
+        &__contenedorInput{
+            margin: auto;
+            height: 2.5rem;
+        }
+        &__contenedorInput--mensaje{
+            height: 5rem;
+        }
+        &__contenedorBotones{
+            margin: auto;
+            height: 2.5rem;
+            width: 50%;
+        }
+        // INPUTS //
+        &__input{
+            width: 100%;
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
+        }
+        &__input--mensaje{
+            width: 100%;
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
+            height: 100%;
+            resize: none;
+        }
+        &__boton{
+            margin: auto;
+            height: 2.5rem;
+            height: 80%;
+            background-color: $colorSecundario;
+            border: solid 1px $colorPrincipal;
+            width: 100%;
+            margin-top: 0.6rem;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
+        }
+        &__boton:focus{
+            background-color: $colorPrincipal;
+            border: solid 1px $colorSecundario;
+            color: $colorSecundario;
+        }
+    }
+    // NEWSLETTER //
+    .seccionNewsletter{
+        background-color: #574686;
+        padding: 1.5rem 0 1.5rem 0;
+        margin-top: 2rem;
+        &__contenedor{
+            max-width: 50%;
+        }
+        &__formCheck{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; 
+        }
+        &__texto{
+            @include texto($fuentePrincipal, 1.25rem, $blanco);
+        }
+        &__mail{
+            background-color: #2B2343;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
+            width: auto;
+            background-color: #2B2343;
+        }
+        &__boton{
+            background-color: $colorSecundario;
+            border: solid 1px $colorPrincipal;
+            @include texto($fuentePrincipal, 1rem, $colorPrincipal)
+        }
+        &__boton:focus{
+            background-color: $colorPrincipal;
+            border: solid 1px $colorSecundario;
+            color: $colorSecundario;
+        }
+    }
+    // REDES //
+    .contenedorRedesContacto{
+        display: flex;
+        width: 24.6rem;
+        margin: auto;
+        justify-content: space-between;
+        &__logo{
+            width: 5rem;
+        }
+    }
 }

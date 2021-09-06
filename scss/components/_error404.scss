@@ -34,7 +34,12 @@
 }
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width:600px){
+    
     .error404{
+        &__titulo{
+            margin-top: 20%;
+            font-size: 4rem;
+        }
         &__contenedorLogoParrafo{
             display: flex;
             flex-direction: column;
@@ -42,6 +47,21 @@
             text-align: center;
             align-items: center;
             justify-content: center;
+        }
+        &__logo{
+            height: 9rem;
+            width: 9rem;
+        }
+        &__subtitulo{
+            font-size: 2rem;
+        }
+        &__parrafo{
+            color: $blanco;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        &__link{
+            color: $colorPrincipal;
         }
     }
 }
