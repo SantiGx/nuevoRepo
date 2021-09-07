@@ -45,7 +45,7 @@
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width:600px){
     .tituloSupernovaBeats{
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-family: 'Lato', sans-serif;
         margin-bottom: 2rem;
     }
@@ -54,10 +54,11 @@
     }
     .articuloNovedades{
         text-align: center;
-        padding: 1.5rem;
+        padding: 0;
+        padding-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
         &__titulo{
             color: $colorPrincipal;
@@ -69,6 +70,8 @@
         &__texto{
             color: $blanco;
             font-size: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
         }
         &__link{
             color: $colorPrincipal;
@@ -98,7 +101,7 @@
     }
     .articuloNovedades{
         text-align: center;
-        padding: 1.5rem;
+        padding-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
         max-width: 80%;

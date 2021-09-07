@@ -44,7 +44,7 @@
             border: solid 1px $colorPrincipal;
             width: 100%;
             margin-top: 0.6rem;
-            @include texto($fuentePrincipal, 1rem, $colorPrincipal);
+            @include texto($fuentePrincipal, 0.8rem, $colorPrincipal);
         }
         &__boton:focus{
             background-color: $colorPrincipal;

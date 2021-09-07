@@ -143,12 +143,12 @@ h3 {
     align-items: center; }
     .footer__texto {
       color: #d04767;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-top: auto;
       margin-bottom: auto; }
   .redesFooter__icono {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 0.3rem; }
   /* --------------- TITULOS ---------------- */
   h1 {
@@ -211,17 +211,18 @@ h3 {
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 600px) {
   .tituloSupernovaBeats {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Lato', sans-serif;
     margin-bottom: 2rem; }
   .tituloNovedades {
     font-size: 2.5rem; }
   .articuloNovedades {
     text-align: center;
-    padding: 1.5rem;
+    padding: 0;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto; }
     .articuloNovedades__titulo {
       color: #d04767;
@@ -231,7 +232,9 @@ h3 {
       font-weight: bold; }
     .articuloNovedades__texto {
       color: #ffffff;
-      font-size: 1rem; }
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
     .articuloNovedades__link {
       color: #d04767; }
   .tablaComparativaBeats {
@@ -253,7 +256,7 @@ h3 {
     font-size: 2.75rem; }
   .articuloNovedades {
     text-align: center;
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     max-width: 80%;
@@ -314,6 +317,8 @@ h3 {
 /* ----------------INSTRUMENTALES------------ */
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 600px) {
+  .tituloInstrumentales {
+    font-size: 2.2rem; }
   .contenedorGridInstrumental {
     display: grid;
     grid-template-columns: repeat(5, 12.25%) 14.75% repeat(2, 12%);
@@ -366,11 +371,11 @@ h3 {
       grid-area: reproductor; }
   .infoInstrumental {
     color: #d04767;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5rem; }
   .titulosInstrumentales {
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     background-color: #3a2f5a;
     min-width: auto;
     padding: 0.1rem; }
@@ -669,7 +674,7 @@ h3 {
       width: 100%;
       margin-top: 0.6rem;
       font-family: "Lato", sans-serif;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: #d04767; }
     .formularioContacto__boton:focus {
       background-color: #d04767;
