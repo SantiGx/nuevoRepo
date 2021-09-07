@@ -15,6 +15,9 @@ body {
   grid-template-rows: auto 1fr auto;
   background-color: #3a2f5a; }
 
+.linkRedes {
+  text-decoration: none; }
+
 /* --------------- HEADER ---------------- */
 .header {
   background-color: #3a2f5a;
@@ -167,10 +170,6 @@ h3 {
     font-weight: 200;
     margin: 0rem 0 1rem 0; } }
 
-/* MIN 600px */
-@media only screen and (min-width: 600px) {
-  /* --------------- HEADER ---------------- */ }
-
 /* --------------- INICIO --------------- */
 .tituloSupernovaBeats {
   font-size: 4rem;
@@ -198,6 +197,8 @@ h3 {
     font-size: 1.25rem; }
   .articuloNovedades__link {
     color: #d04767; }
+  .articuloNovedades__link:focus {
+    color: #ffffff; }
 
 .tablaComparativaBeats {
   margin: auto; }
@@ -315,7 +316,7 @@ h3 {
 @media only screen and (max-width: 600px) {
   .contenedorGridInstrumental {
     display: grid;
-    grid-template-columns: repeat(5, 12.25%) 14% repeat(2, 12.25%);
+    grid-template-columns: repeat(5, 12.25%) 14.75% repeat(2, 12%);
     grid-template-rows: auto auto;
     grid-template-areas: "titulo duracion bpm genero escala tags precio carrito" "reproductor reproductor reproductor reproductor reproductor reproductor reproductor reproductor ";
     justify-items: center;
@@ -559,9 +560,6 @@ h3 {
     color: #09070D;
     font-size: 1.25rem; }
 
-/* --------------- MEDIA QUERY --------------- */
-/* MIN 600px */
-/* MIN 992px */
 /* ----------------SOBRE MI---------------- */
 .contenedorSobreMi {
   display: flex;
@@ -638,7 +636,8 @@ h3 {
 @media only screen and (max-width: 600px) {
   .formularioContacto {
     width: 90%;
-    margin: auto; }
+    margin: auto;
+    padding-bottom: 1rem; }
     .formularioContacto__contenedorInput {
       margin: auto;
       height: 2.5rem; }
@@ -678,7 +677,9 @@ h3 {
       color: #3a2f5a; }
   .seccionNewsletter {
     background-color: #574686;
-    margin-top: 2rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center; }
     .seccionNewsletter__contenedor {
       max-width: 100%; }
     .seccionNewsletter__formCheck {
@@ -707,20 +708,24 @@ h3 {
       background-color: #d04767;
       border: solid 1px #3a2f5a;
       color: #3a2f5a; }
+  .secccionRedesContacto {
+    padding-top: 1rem; }
   .contenedorRedesContacto {
     display: flex;
-    width: 100%;
+    width: 70%;
     margin: auto;
     justify-content: space-evenly;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 1rem; }
     .contenedorRedesContacto__logo {
-      width: 5rem; } }
+      width: 3.5rem; } }
 
 /* MIN 600px */
 @media only screen and (min-width: 600px) {
   .formularioContacto {
     width: 75%;
-    margin: auto; }
+    margin: auto;
+    padding-bottom: 1.5rem; }
     .formularioContacto__contenedorInput {
       margin: auto;
       height: 2.5rem; }
@@ -761,7 +766,7 @@ h3 {
   .seccionNewsletter {
     background-color: #574686;
     padding: 1.5rem 0 1.5rem 0;
-    margin-top: 2rem; }
+    text-align: center; }
     .seccionNewsletter__contenedor {
       max-width: 75%; }
     .seccionNewsletter__formCheck {
@@ -790,11 +795,14 @@ h3 {
       background-color: #d04767;
       border: solid 1px #3a2f5a;
       color: #3a2f5a; }
+  .secccionRedesContacto {
+    padding-top: 1.5rem; }
   .contenedorRedesContacto {
     display: flex;
     width: 24.6rem;
     margin: auto;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 1.5rem; }
     .contenedorRedesContacto__logo {
       width: 5rem; } }
 
@@ -802,7 +810,8 @@ h3 {
 @media only screen and (min-width: 992px) {
   .formularioContacto {
     width: 50%;
-    margin: auto; }
+    margin: auto;
+    padding-bottom: 1.5rem; }
     .formularioContacto__contenedorInput {
       margin: auto;
       height: 2.5rem; }
@@ -844,7 +853,7 @@ h3 {
   .seccionNewsletter {
     background-color: #574686;
     padding: 1.5rem 0 1.5rem 0;
-    margin-top: 2rem; }
+    text-align: center; }
     .seccionNewsletter__contenedor {
       max-width: 50%; }
     .seccionNewsletter__formCheck {
@@ -873,11 +882,14 @@ h3 {
       background-color: #d04767;
       border: solid 1px #3a2f5a;
       color: #3a2f5a; }
+  .secccionRedesContacto {
+    padding-top: 1.5rem; }
   .contenedorRedesContacto {
     display: flex;
     width: 24.6rem;
     margin: auto;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 1.5rem; }
     .contenedorRedesContacto__logo {
       width: 5rem; } }
 
@@ -908,6 +920,8 @@ h3 {
     text-align: center; }
   .error404__link {
     color: #d04767; }
+  .error404__link:focus {
+    color: #ffffff; }
 
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 600px) {

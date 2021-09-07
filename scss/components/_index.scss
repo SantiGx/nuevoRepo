@@ -28,6 +28,9 @@
     &__link{
         color: $colorPrincipal;
     }
+    &__link:focus{
+        color: $blanco;
+    }
 }
 .tablaComparativaBeats{
     margin: auto;

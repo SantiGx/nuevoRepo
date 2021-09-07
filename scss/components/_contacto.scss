@@ -4,12 +4,13 @@
     font-size: $tamanioFuente;
     color: $colorFuente;
  }
+ 
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width:600px){
-    
     .formularioContacto{
         width: 90%;
         margin: auto;
+        padding-bottom: 1rem;
         // CONTENEDORES //
         &__contenedorInput{
             margin: auto;
@@ -54,7 +55,9 @@
     // NEWSLETTER //
     .seccionNewsletter{
         background-color: #574686;
-        margin-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
         &__contenedor{
             max-width: 100%;
         }
@@ -85,22 +88,28 @@
         }
     }
     // REDES //
+    .secccionRedesContacto{
+        padding-top: 1rem;
+    }
     .contenedorRedesContacto{
         display: flex;
-        width: 100%;
+        width: 70%;
         margin: auto;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin-bottom: 1rem;
         &__logo{
-            width: 5rem;
+            width: 3.5rem;
         }
     }
 }
 /* MIN 600px */
 @media only screen and (min-width:600px){
+    // FORM CONTACTO //
     .formularioContacto{
         width: 75%;
         margin: auto;
+        padding-bottom: 1.5rem;
         // CONTENEDORES //
         &__contenedorInput{
             margin: auto;
@@ -146,7 +155,7 @@
     .seccionNewsletter{
         background-color: #574686;
         padding: 1.5rem 0 1.5rem 0;
-        margin-top: 2rem;
+        text-align: center;
         &__contenedor{
             max-width: 75%;
         }
@@ -177,11 +186,15 @@
         }
     }
     // REDES //
+    .secccionRedesContacto{
+        padding-top: 1.5rem;
+    }
     .contenedorRedesContacto{
         display: flex;
         width: 24.6rem;
         margin: auto;
         justify-content: space-between;
+        margin-bottom: 1.5rem;
         &__logo{
             width: 5rem;
         }
@@ -193,6 +206,7 @@
     .formularioContacto{
         width: 50%;
         margin: auto;
+        padding-bottom: 1.5rem;
         // CONTENEDORES //
         &__contenedorInput{
             margin: auto;
@@ -239,7 +253,7 @@
     .seccionNewsletter{
         background-color: #574686;
         padding: 1.5rem 0 1.5rem 0;
-        margin-top: 2rem;
+        text-align: center;
         &__contenedor{
             max-width: 50%;
         }
@@ -270,11 +284,15 @@
         }
     }
     // REDES //
+    .secccionRedesContacto{
+        padding-top: 1.5rem;
+    }
     .contenedorRedesContacto{
         display: flex;
         width: 24.6rem;
         margin: auto;
         justify-content: space-between;
+        margin-bottom: 1.5rem;
         &__logo{
             width: 5rem;
         }

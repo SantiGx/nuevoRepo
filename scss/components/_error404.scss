@@ -31,6 +31,9 @@
     &__link{
         color: $colorPrincipal;
     }
+    &__link:focus{
+        color: $blanco;
+    }
 }
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width:600px){
